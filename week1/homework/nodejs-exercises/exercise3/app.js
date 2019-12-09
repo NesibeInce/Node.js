@@ -1,7 +1,7 @@
 var http = require('http');
 
 //create a server
-let server = http.createServer(function (req, res) {
+let server = http.createServer((req, res) => {
   if (req.url === '/script.js') {
     res.setHeader('Content-Type', 'text/javascript')
     res.write(
